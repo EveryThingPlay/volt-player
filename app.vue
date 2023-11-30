@@ -44,7 +44,7 @@ useHead({
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@400;500;600&display=swap'); // Roboto
 
 h3 {
-  font-family: Inter;
+  font-family: 'Nunito Sans', sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
