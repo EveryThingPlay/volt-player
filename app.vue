@@ -8,16 +8,15 @@
 
 <script setup>
 import {useHead, useSeoMeta} from '#imports';
-import ogImage from './public/OG_ Image.png';
 
 useSeoMeta({
 	ogTitle: 'VOLT Player',
 	ogDescription: 'VOLT Player is basic music player for web',
-	ogImage,
+	ogImage: '/OG_ Image.png?url',
 	ogUrl: 'https://voltplayer.io', // Example only
 	twitterTitle: 'Check out VOLT Player',
 	twitterDescription: 'VOLT Player is basic music player for web',
-	twitterImage: ogImage,
+	twitterImage: '/OG_ Image.png?url',
 	twitterCard: 'summary_large_image',
 });
 
