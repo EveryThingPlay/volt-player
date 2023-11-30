@@ -1,7 +1,6 @@
 <template>
   <div class="index">
     <PlaylistCard
-      round
       centered
       author="Noisia"
       title="Split the atom"

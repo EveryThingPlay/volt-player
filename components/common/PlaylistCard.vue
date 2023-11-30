@@ -75,11 +75,11 @@ const props = defineProps({
     background: #ffffff30;
     transition-duration: 0.1s;
     transform: scale(0.97);
-    -webkit-tap-highlight-color: transparent !important;
   }
 
   .playlistCard {
     width: 160px;
     height: 212px;
+    -webkit-tap-highlight-color: transparent !important;
   }
 </style>
