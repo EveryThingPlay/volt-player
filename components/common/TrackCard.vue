@@ -1,12 +1,15 @@
 <template>
   <div class="trackCard">
-  <div class="trackCard-data">
-    <img class="trackCard-data-image" :src="image"/>
-    <div class="trackCard-data-text">
-      <h4>{{ title }}</h4>
-      <h5>{{ author }}</h5>
+    <div class="trackCard-data">
+      <img
+        class="trackCard-data-image"
+        :src="image"
+      >
+      <div class="trackCard-data-text">
+        <h4>{{ title }}</h4>
+        <h5>{{ author }}</h5>
+      </div>
     </div>
-  </div>
     <div class="trackCard-data-duration">
       {{ duration }}
     </div>
@@ -14,7 +17,6 @@
 </template>
 
 <script setup lang="ts">
-import {reactive} from 'vue';
 defineProps({
 	title: {
 		type: String,
