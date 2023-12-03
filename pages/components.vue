@@ -14,6 +14,7 @@
     />
     <TextField v-model="model" />
     {{ model }}
+    <PlayerControls />
   </div>
 </template>
 
@@ -21,6 +22,7 @@
 import PlaylistCard from '~/components/common/PlaylistCard.vue';
 import TrackCard from '~/components/common/TrackCard.vue';
 import TextField from '~/components/common/TextField.vue';
+import PlayerControls from '~/components/common/PlayerControls.vue';
 
 const model = ref();
 </script>
