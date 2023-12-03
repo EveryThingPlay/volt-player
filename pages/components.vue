@@ -4,9 +4,13 @@
       centered
       author="Noisia"
       title="Split the atom"
-      img="https://f4.bcbits.com/img/a3909086815_65"
+      img="https://sun9-21.userapi.com/impf/c636022/v636022799/2957a/ffxCm-U4-3Q.jpg?size=510x537&quality=96&sign=3f6ba4470132d4eba796546e0d4c551d&type=album"
     ></PlaylistCard>
-    <TrackCard></TrackCard>
+    <TrackCard
+      author="Noisia"
+      title="Closer"
+      img="https://sun9-21.userapi.com/impf/c636022/v636022799/2957a/ffxCm-U4-3Q.jpg?size=510x537&quality=96&sign=3f6ba4470132d4eba796546e0d4c551d&type=album"
+    ></TrackCard>
   </div>
 </template>
 
