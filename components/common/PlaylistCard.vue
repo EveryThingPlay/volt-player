@@ -41,45 +41,28 @@ const props = defineProps({
 });
 </script>
 
-<style scoped lang="scss">
-
-  .playlistCard-body-image {
-    width: 160px;
-    height: 160px;
-
-		&.round {
-			border-radius: 80px;
-		}
-  }
-
-  .playlistCard-body {
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    transition-duration: 0.1s;
-  }
-  .playlistCard-body-text {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-	}
-
-  @media (hover: hover) {
-    .playlistCard-body:hover {
-      background: #ffffff20;
-      transition-duration: 0.1s;
-    }
-  }
-  .playlistCard-body:active {
-    background: #ffffff30;
-    transition-duration: 0.1s;
-    transform: scale(0.97);
-  }
-
+<style scoped lang="postcss">
   .playlistCard {
     width: 160px;
     height: 212px;
     -webkit-tap-highlight-color: transparent !important;
+
+    .playlistCard-body {
+      @apply cursor-pointer flex flex-col gap-1 duration-100 active:bg-gray-800 active:scale-95;
+      @media (hover: hover) {
+        @apply hover:bg-gray-900
+      }
+
+      .playlistCard-body-text {
+        @apply flex flex-col gap-1;
+      }
+
+      .playlistCard-body-image {
+        @apply w-40 h-40;
+        &.round {
+          border-radius: 80px;
+        }
+      }
+    }
   }
 </style>

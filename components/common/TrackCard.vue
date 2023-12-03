@@ -1,19 +1,20 @@
 <template>
   <div class="trackCard">
   <div class="trackCard-data">
-    <img class="trackCard-data-image" src="https://f4.bcbits.com/img/a4116063122_10.jpg"/>
+    <img class="trackCard-data-image" :src="image"/>
     <div class="trackCard-data-text">
-      <h4>Cleansing</h4>
-      <h5>Noisia, Former</h5>
+      <h4>{{ title }}</h4>
+      <h5>{{ author }}</h5>
     </div>
   </div>
     <div class="trackCard-data-duration">
-      4:30
+      {{ duration }}
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import {reactive} from 'vue';
 defineProps({
 	title: {
 		type: String,
@@ -29,9 +30,12 @@ defineProps({
 	},
 	image: {
 		type: String,
-		default: `${require('../../assets/img/album.png')}`,
+		default: '/album.png',
 	},
 });
+
+// Const imageSource = reactive(require('~/assets/img/album.png'));
+
 </script>
 
 <style scoped lang="postcss">
