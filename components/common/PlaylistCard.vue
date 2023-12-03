@@ -1,12 +1,25 @@
 <template>
   <div class="playlistCard">
     <div class="playlistCard-body">
-      <img class="playlistCard-body-image" :src="img" :class="round? 'round':''">
-      <div class="playlistCard-body-text" :class="centered? 'justify-center': ''">
-        <h4 class="playlistCard-body-text-title" v-if="title">
+      <img
+        class="playlistCard-body-image"
+        :src="img"
+        :class="round? 'round':''"
+      >
+      <div
+        class="playlistCard-body-text"
+        :class="centered? 'justify-center': ''"
+      >
+        <h4
+          v-if="title"
+          class="playlistCard-body-text-title"
+        >
           {{ title }}
         </h4>
-        <h5 class="playlistCard-body-text-author" v-if="author">
+        <h5
+          v-if="author"
+          class="playlistCard-body-text-author"
+        >
           by {{ author }}
         </h5>
       </div>
@@ -15,9 +28,7 @@
 </template>
 
 <script setup>
-
-// eslint-disable-next-line no-unused-vars
-const props = defineProps({
+defineProps({
 	title: {
 		type: String,
 		default: null,
