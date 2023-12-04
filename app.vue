@@ -49,6 +49,8 @@ h3 {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 h4 {
@@ -57,6 +59,8 @@ h4 {
   font-style: normal;
   font-weight: 700;
   line-height: 22px; /* 137.5% */
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 h5 {
@@ -65,6 +69,8 @@ h5 {
   font-style: normal;
   font-weight: 400;
   line-height: 22px; /* 157.143% */
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .page {
   min-height: 100vh;
