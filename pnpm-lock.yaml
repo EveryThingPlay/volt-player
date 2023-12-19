@@ -8,6 +8,18 @@ dependencies:
   '@vue/eslint-config-typescript':
     specifier: ^12.0.0
     version: 12.0.0(eslint-plugin-vue@9.18.1)(eslint@8.54.0)(typescript@5.3.2)
+  id3-parser:
+    specifier: ^3.0.0
+    version: 3.0.0
+  jsmediatags:
+    specifier: ^3.9.7
+    version: 3.9.7
+  musicmetadata:
+    specifier: ^2.0.5
+    version: 2.0.5
+  mutag:
+    specifier: ^2.0.7
+    version: 2.0.7
   sass:
     specifier: ^1.69.5
     version: 1.69.5
@@ -3463,6 +3475,10 @@ packages:
     dependencies:
       ms: 2.1.2
 
+  /deep-equal@0.2.1:
+    resolution: {integrity: sha512-m+FbkTWIPrb/qgd/v/A1ZcLDyS0sIvlCEOWPTaHaK3GM6SY71VZ/mP4YDKNquKBrkS7m3HRCO5+tLhsjeMVKxA==}
+    dev: false
+
   /deep-equal@1.0.1:
     resolution: {integrity: sha512-bHtC0iYvWhyaTzvV3CZgPeZQqCOBGyGsVV7v4eevpdkLHfiSrXUdBG+qAuSz4RI70sszvjQ1QSZ98An1yNwpSw==}
     dev: true
@@ -4334,6 +4350,12 @@ packages:
     resolution: {integrity: sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==}
     dev: true
 
+  /filereader-stream@0.2.0:
+    resolution: {integrity: sha512-4VIFXppZFLjx3Dz9GSVPh4MdC2iPQDgr6rksO2EcSou7lUOIQZ0FsoaTCeWp/k5VTs8bZKBUAjOny/oavvzumQ==}
+    dependencies:
+      inherits: 1.0.0
+    dev: false
+
   /fill-range@7.0.1:
     resolution: {integrity: sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ==}
     engines: {node: '>=8'}
@@ -4813,6 +4835,11 @@ packages:
     dev: true
     optional: true
 
+  /id3-parser@3.0.0:
+    resolution: {integrity: sha512-ubxxh6inGy2VM4N3L1F8uFQXKgKoFgFuT3BSEg7e+5bbSu7pw91tQqxVhUdJVg3jbzZYZJFaej29o8shfJ/GGg==}
+    engines: {node: '>=16'}
+    dev: false
+
   /ignore-walk@6.0.3:
     resolution: {integrity: sha512-C7FfFoTA+bI10qfeydT8aZbvr91vAEU+2W5BZUlzPec47oNb07SsOfwYrtxuvOYdUApPP/Qlh4DtAO51Ekk2QA==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
@@ -4852,6 +4879,10 @@ packages:
     dependencies:
       once: 1.4.0
       wrappy: 1.0.2
+
+  /inherits@1.0.0:
+    resolution: {integrity: sha512-5KfXESjCAfFQel2TLqhr18NEz++UiWVIA0jwHzs2Kbvb3e+r+G/eVhRfoZbaPCL0PnERvK5YeMgh02O4eenufw==}
+    dev: false
 
   /inherits@2.0.3:
     resolution: {integrity: sha512-x00IRNXNy63jwGkJmzPigoySHbaqpNuzKbBOmzK+g2OdZpQ9w+sxCN+VSB3ja7IAge2OP2qpfxTjeNcyjmW1uw==}
@@ -5028,6 +5059,11 @@ packages:
       protocols: 2.0.1
     dev: true
 
+  /is-stream@1.1.0:
+    resolution: {integrity: sha512-uQPm8kcs47jx38atAcWTVxyltQYoPT68y9aWYdV6yWXSyW8mzSat0TL6CiWdZeCdF3KrAvpVtnHbTv4RN+rqdQ==}
+    engines: {node: '>=0.10.0'}
+    dev: false
+
   /is-stream@2.0.1:
     resolution: {integrity: sha512-hFoiJiTl63nn+kstHGBtewWSKnQLpyb155KHheA1l39uvtO9nWIop1p3udqPcUd/xbF1VLMO4n7OI6p7RbngDg==}
     engines: {node: '>=8'}
@@ -5133,6 +5169,13 @@ packages:
     engines: {node: '>=6'}
     hasBin: true
     dev: true
+
+  /jsmediatags@3.9.7:
+    resolution: {integrity: sha512-xCAO8C3li3t5hYkXqn8iv8zQQUB4T1QqRN2aSONHMls21ICdEvXi4xtb6W70/fAFYSDwMHd32hIqvo4YuXoNcQ==}
+    engines: {node: '>=4.0.0'}
+    dependencies:
+      xhr2: 0.1.4
+    dev: false
 
   /json-buffer@3.0.1:
     resolution: {integrity: sha512-4bV5BfR2mqfQTJm+V5tPPdf+ZpuhiIvTuAB5g8kcrXOZpTT/QwwVRWBywX1ozr6lEuPdbHxwaJlm9G6mI2sfSQ==}
@@ -5707,6 +5750,20 @@ packages:
   /ms@2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
     dev: true
+
+  /musicmetadata@2.0.5:
+    resolution: {integrity: sha512-kAvND9In5xw2oXuLsTr07cuHpm6Rcym9j4yewMbLWa/y6kpDxDfE3RwNHzaJy1/8NK0F4cHgp3zzGd/eyHL0ng==}
+    dependencies:
+      deep-equal: 0.2.1
+      filereader-stream: 0.2.0
+      is-stream: 1.1.0
+      strtok2: 1.0.4
+      through: 2.3.8
+    dev: false
+
+  /mutag@2.0.7:
+    resolution: {integrity: sha512-iOEm2zpJIZ3ibg4ufmZ7bEe8l+N07Xjep4c34O6zC7WDFwburHJWgQdZBY+Barlr33UJg9hwcIG1PT/WfHe28A==}
+    dev: false
 
   /mz@2.7.0:
     resolution: {integrity: sha512-z81GNO7nnYMEhrGh9LeymoE4+Yr0Wn5McHIZMK5cfQCl+NDX08sCZgUc9/6MHni9IWuFLm1Z3HTCXu2z9fN62Q==}
@@ -7560,6 +7617,12 @@ packages:
       acorn: 8.11.2
     dev: true
 
+  /strtok2@1.0.4:
+    resolution: {integrity: sha512-QDh0uZ+geZqzrdX3bjlMjzukMcsxolDFqj3p2wW5aJzyTp4sqvJatS7lbvcYK3KvuEtg4yE/YSW7RWUwruN2Xw==}
+    engines: {node: '>=0.1.98'}
+    deprecated: depricated, use strtok3 & music-metadata instead
+    dev: false
+
   /stylehacks@6.0.0(postcss@8.4.31):
     resolution: {integrity: sha512-+UT589qhHPwz6mTlCLSt/vMNTJx8dopeJlZAlBMJPWA3ORqu6wmQY7FBXf+qD+FsqoBJODyqNxOUP3jdntFRdw==}
     engines: {node: ^14 || ^16 || >=18.0}
@@ -7759,6 +7822,10 @@ packages:
     dependencies:
       any-promise: 1.3.0
     dev: true
+
+  /through@2.3.8:
+    resolution: {integrity: sha512-w89qg7PI8wAdvX60bMDP+bFoD5Dvhm9oLheFp5O4a2QF0cSBGsBX4qZmadPMvVqlLJBBci+WqGGOAPvcDeNSVg==}
+    dev: false
 
   /tiny-invariant@1.3.1:
     resolution: {integrity: sha512-AD5ih2NlSssTCwsMznbvwMZpJ1cbhkGd2uueNxzv2jDlEeZdU04JQfRnggJQ8DrcVBGjAsCKwFBbDlVNtEMlzw==}
@@ -8536,6 +8603,11 @@ packages:
       utf-8-validate:
         optional: true
     dev: true
+
+  /xhr2@0.1.4:
+    resolution: {integrity: sha512-3QGhDryRzTbIDj+waTRvMBe8SyPhW79kz3YnNb+HQt/6LPYQT3zT3Jt0Y8pBofZqQX26x8Ecfv0FXR72uH5VpA==}
+    engines: {node: '>= 0.6'}
+    dev: false
 
   /xml-name-validator@4.0.0:
     resolution: {integrity: sha512-ICP2e+jsHvAj2E2lIHxa5tjXRlKDJo4IdvPvCXbXQGdzSfmSpNVyIKMvoZHjDY9DP0zV17iI85o90vRFXNccRw==}

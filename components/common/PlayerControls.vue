@@ -8,7 +8,7 @@
     </button>
     <button
       :class="`PlayerControls-centerButton ${compact? 'compact':''}`"
-      @click="toggle"
+      @click="togglePlayer(player)"
     >
       <img
         v-if="!isPlaying"
@@ -29,7 +29,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import {usePlayerStore} from '../../stores/playerStore';
 
 defineProps({
@@ -37,17 +37,17 @@ defineProps({
 		type: Boolean,
 		default: false,
 	},
+	player: {
+		type: Object,
+		required: true,
+	},
 });
 
 const store = usePlayerStore();
 
 const {isPlaying} = storeToRefs(store);
 
-const {forward, backward} = store;
-
-const toggle = () => {
-	isPlaying.value = !isPlaying.value;
-};
+const {forward, backward, togglePlayer} = store;
 </script>
 
 <style scoped lang="postcss">
