@@ -1,75 +1,28 @@
-# Nuxt 3 Minimal Starter
+# VOLT
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Изначально это должно было быть тестовым заданием для одной компании, однако из-за некоторых проблем его выполнение сильно затянулось и уже стало неактуальным.\
+\
+Вёрстка в соответствии с дизайном >>> https://www.figma.com/file/QCeUtNwDdJXPXnlPe6HBMI/Volt-player \
+\
+Дизайн также мой, делал в соответствии с описанием необходимого функционала в ТЗ.
 
-## Setup
+## Установка и запуск
 
-Make sure to install the dependencies:
+Зависимости:
 
 ```bash
-# npm
-npm install
-
-# pnpm
+# Можно использовать любой пакетный менеджер, но я предпочитаю pnpm
 pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+Dev-сервер на `http://localhost:3000`:
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
 pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
-
-Build the application for production:
+Production-сборка:
 
 ```bash
-# npm
-npm run build
-
-# pnpm
 pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
